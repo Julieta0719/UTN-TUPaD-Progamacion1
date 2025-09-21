@@ -130,7 +130,7 @@ print(suma)
 #Ejercicio 8
 
 #Mensaje para el usuario
-print("Ingrese 5 números y se imprimirá cuantos son pares, impares, positivos y negativos")
+print("Ingrese 100 números y se imprimirá cuantos son pares, impares, positivos y negativos")
 
 #Inicialización de variable
 contador = 0
