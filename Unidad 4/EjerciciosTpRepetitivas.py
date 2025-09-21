@@ -197,3 +197,32 @@ print(f"La media de los números ingresados es: {media}")
 
 #Ejercicio 10
 
+#Mensaje para el usuario
+print("Ingrese algún número para invertir su orden")
+
+#Inicialización de variables
+inverso = 0
+negativo = ""
+
+#Le pedimos al usuario ingresar el número
+numero = int(input("Ingrese un número: "))
+
+#Condicional if para almacenar el signo negativo en una variable auxiliar y convertir el negativo a positivo
+if numero < 0:
+    negativo = "-"
+    numero = numero * -1
+
+#Bucle while para invertir el número
+while numero > 0:
+    digito =  numero % 10
+    inverso = inverso * 10 + digito
+    numero = numero // 10
+
+
+#Si el número es negativo la variable numero se convierte a string para agregar el signo
+inverso = str(inverso)
+inverso = negativo + inverso
+
+#Se imprime el número invertido
+print(f"El número invertido es: {inverso}")
+
